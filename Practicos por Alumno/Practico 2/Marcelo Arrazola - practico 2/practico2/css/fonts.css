@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+  	   url('fonts/HelveticaNeue-Medium.woff') format('woff'), 
+  	   url('fonts/HelveticaNeue-Medium.ttf')  format('truetype'), 
+  	   url('fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_CherrySwash-Regular';
+	src: url('fonts/CherrySwash-Regular.eot');
+	src: local('☺'), url('fonts/CherrySwash-Regular.woff') format('woff'), url('fonts/CherrySwash-Regular.ttf') format('truetype'), url('fonts/CherrySwash-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_HelveticaLTStd-Roman';
+	src: url('fonts/HelveticaLTStd-Roman.eot');
+	src: local('☺'), url('fonts/HelveticaLTStd-Roman.woff') format('woff'), url('fonts/HelveticaLTStd-Roman.ttf') format('truetype'), url('fonts/HelveticaLTStd-Roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_HelveticaLTStd-Light';
+	src: url('fonts/HelveticaLTStd-Light.eot');
+	src: local('☺'), url('fonts/HelveticaLTStd-Light.woff') format('woff'), url('fonts/HelveticaLTStd-Light.ttf') format('truetype'), url('fonts/HelveticaLTStd-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_HelveticaLTStd-Bold';
+	src: url('fonts/HelveticaLTStd-Bold.eot');
+	src: local('☺'), url('fonts/HelveticaLTStd-Bold.woff') format('woff'), url('fonts/HelveticaLTStd-Bold.ttf') format('truetype'), url('fonts/HelveticaLTStd-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_HelveticaNeueLTStd Lt';
+	src: url('fonts/HelveticaNeueLTStd Lt.eot');
+	src: local('☺'), url('fonts/HelveticaNeueLTStd Lt.woff') format('woff'), url('fonts/HelveticaNeueLTStd Lt.ttf') format('truetype'), url('fonts/HelveticaNeueLTStd Lt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_ostrich-regular';
+	src: url('fonts/ostrich-regular.eot');
+	src: local('☺'), url('fonts/ostrich-regular.woff') format('woff'), url('fonts/ostrich-regular.ttf') format('truetype'), url('fonts/ostrich-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_OstrichSans-Bold';
+	src: url('fonts/OstrichSans-Bold.eot');
+	src: local('☺'), url('fonts/OstrichSans-Bold.woff') format('woff'), url('fonts/OstrichSans-Bold.ttf') format('truetype'), url('fonts/OstrichSans-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
