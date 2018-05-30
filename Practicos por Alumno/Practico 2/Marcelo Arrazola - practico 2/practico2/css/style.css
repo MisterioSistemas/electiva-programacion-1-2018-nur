@@ -1,0 +1,553 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/*-------menu-------*/
+.menuContainer{
+    height: 3.3em;
+    display: block;
+}
+
+.menu{
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 6px -1px #a2a2a2;
+    color: white;
+    font-weight: 600;
+    display: flex;
+}
+
+.tituloPag{
+    width: 5em;
+    COLOR: red;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 0.5em;
+    text-align: left;
+    margin-right: 0.5em;
+}
+
+.divBuscar{
+    width: 50%;
+}
+
+.buscar{    
+    height: 15px;
+    border-radius: 4px;
+    width: 80%;
+    border-style: groove;
+    margin: 0 5px 0 35px;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.nuevo{
+    color: #cecece;
+    text-decoration: none;
+    font-size: 25px;
+    width: 6em;
+    text-align: center;
+}
+
+.linkADM{
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.iconoMenu{}
+
+.sub-menu{
+    width: 10em;
+    text-align: center;
+    position: fixed;
+    right: 2%;
+}
+
+
+.nuevo:hover{
+    text-shadow: 0 0 2px #d6d5d5, 0 0 30px #9f9fa2;
+}
+
+
+
+/*-------cuerpo-------*/
+
+body{
+    background-color: white;
+}
+
+.greatContainer{
+    display: inline-flex;
+    width: 100%;
+}
+
+.categorias{
+    width: 15%;
+    background: #f9f6f673;
+    height: -webkit-fill-available;
+    padding-top: 20px;
+    color: black;
+    position: fixed;
+}
+
+.linkCategoria{
+    width: 90%;
+    color: #615a5a;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    font-stretch: expanded;
+    text-transform: capitalize; 
+    display: block;
+}
+
+.linkCategoria:hover{
+    background-color: #a2a2a22e;
+}
+
+.contenedorPeliculas{
+    margin: auto;
+    margin-top: 35px;
+    margin-left: 20%;
+    display: flex;
+    width: 78%;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+}
+
+.respuesta{
+    position: absolute;
+    top: 60px;
+    left: 14em;
+    font-size: 20px;
+    color: #a98c8c;
+}
+
+.video{
+    width: 240px;
+    height: 250px;
+    position: relative;
+    margin: 0.5em;   
+    /*display: grid;*/
+}
+
+.id{
+    position: absolute;
+    visibility: hidden;
+}
+
+.divPortada{
+    width: 100%;
+    height: 70%;
+    border-radius: 2%;
+    display: inline-block;
+    box-shadow: 0px 0px 6px -1px #a2a2a2;
+}
+
+.divPortada a{
+    color: black;
+    text-decoration: none;
+}
+
+.imgPortada{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.divTexto{
+    display: grid;
+}
+
+.link{
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-shadow: 0 0 2px #d6d5d5, 0 0 30px #9f9fa2;
+}
+
+.titulo{
+}
+
+.texto{
+}
+
+.pelicula:hover{
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px 2px #656565;
+}
+
+.pelicula:hover .divTexto{
+    background: #0000008a;
+}
+
+.pelicula:hover .titulo{
+    display: block;
+}
+
+.pelicula:hover .texto{
+    display: block;
+}
+
+.divIcons{
+    position: absolute;
+}
+
+.linkIcon{
+    color: white;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+.linkIcon:hover{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: red;
+}
+
+.pelicula:hover .linkIcon{
+    visibility: visible;
+}
+
+.linkIcon:hover + .divTexto{
+    background: #0000008a;
+}
+
+.iconPlay{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    font-size: 5em;
+}
+
+.divSubIcons{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 2%;
+}
+
+.subIcons{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.iconLike{}
+
+.iconNoLike{}
+
+.iconAdd{}
+
+/*----------formulario-----------*/
+
+.container{
+    color: #777676;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #c3c3c3;
+    margin-top: 30px;
+}
+
+.formContainer{
+    width: 100%;
+}
+
+.form{
+    width: 400px;
+    margin: auto;
+}
+
+.formDiv{
+    text-align: right;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.formInput{
+    width: 200px;
+    margin-left: 50px;
+    border-color: #cccccc;
+    color: #525252;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.formInputSinopsis{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    border-color: #cccccc;
+    color: #525252;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.formInputURL{
+    width: 270px;
+    margin-left: 50px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.formDiv label{
+    width: 100px;
+    padding: 5px;
+}
+
+.checks{
+    display: block;
+    width: 360px;
+    margin: auto;
+}
+
+.checksContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checksDiv{
+    width: 500px;
+    margin: auto;
+}
+
+.categoriasChecks{
+    width: 120px;
+}
+
+.deleteCat{
+    margin: 0px 22px;
+}
+
+.lblCategorias{
+    color: #929292;
+}
+
+.delCategorias{
+    text-decoration: none;
+    color: #f96666;
+}
+
+.delCategorias i{
+    float: right;
+    margin-right: 10px;
+}
+.formInputButtom{
+    border-radius: 5px;
+    color: white;
+    border-color: #776ff3;
+    border-style: solid;
+    margin: 0 60px;
+    padding: 6px;
+    width: 140px;
+    background-color: #776ff3;
+}
+
+.linkCancelar{
+    padding: 5px;
+    text-decoration: none;
+    color: #776ff3;
+}
+
+.linkCancelar:hover{
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #0400ff;
+}
+
+/*-------ListaAdm------*/
+
+.containerList{
+    color: black;
+}
+
+.DivTable{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tableList{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tableList td, .tableList th{
+    width: 120px;
+    height: 40px;
+    padding: 0 15px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+.btnStandar{
+    background-color: #bdbfbd;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px #b1a4a4;
+}
+
+.btnCategoria{
+    background-color: #c4c8f7;
+}
+
+.btnEditar{
+    background-color: #79fb70;
+}
+
+.btnEliminar{
+    background-color: #f16d6d;
+}
+
+/*-------descPelicula--------*/
+
+.divVideo{
+    background: #0e0e0e;
+}
+
+.descVideo{
+    width: 775px;
+    height: 430px;
+    margin-left: 20%;
+}
+
+.divAtras{
+    position: absolute;
+    margin: 0.5em;
+}
+
+.linkDesc{
+}
+
+.divImagen{
+    height: 550px;
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+}
+
+.imgPortadaDesc{
+    width: 430px;
+    height: 550px;
+    border-radius: 2%;
+}
+
+.contenido{
+    width: 50%;
+    display: block;
+    padding-top: 0px;
+}
+
+.contenido div{
+    margin: 20px;
+    margin-left: 140px;
+}
+
+.info{
+    display: flex;
+    height: 315px;
+}
+
+.textoDesc{
+}
+
+.divNombre{
+    font-size: 28px;
+    text-transform: capitalize;
+}
+.txtAutor, .txtFecha{
+    display: block;
+}
+.txtAutor{
+    color: #0e0e0e;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.txtFecha{
+    color: #b1b0b0;
+}
+
+.tituloDesc{}
+
+.divDescricion{}
+
+.divAutor{}
+
+.categoriasVideo{
+    margin: 20px;
+}
+
+.linkEtiquetas{
+    border-style: solid;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border-radius: 9px;
+    background-color: #989898;
+}
+
+.iconPlayDesc{
+    font-size: 100px;
+    position: relative;
+    top: 200px;
+    left: 130px;
+}
+
+.divSubIconsDesc{
+    display: inline-block;
+    margin: 20px;
+}
+
+.rightConten{
+    display: block;
+}
+
+.subIconsDesc{
+    margin: 15px;
+}
+
+.linkIconDesc{
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #8e8e8e;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.linkIconDesc:hover{
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #000000;
+}
+
+.linkEtiquetas:hover{
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #000000;
+    color: #d8d7d7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

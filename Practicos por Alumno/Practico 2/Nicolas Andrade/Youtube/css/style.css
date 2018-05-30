@@ -1,0 +1,23 @@
+h1, h3{
+    color: #c12e2a;
+}
+
+a{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+label{
+    color: #dff0d8;
+}
+
+img{
+    margin-top: 15px;
+    margin-right: 20px;
+    height: 150px;
+    width: 200px;
+}
+
+.video{
+    display: inline-flex;
+}
