@@ -1,0 +1,33 @@
+body{
+    background-color: #0f0f0f;
+}
+
+h1{
+    color: #c12e2a;
+}
+
+a{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+label{
+    color: #dff0d8;
+}
+
+img{
+    height: 150px;
+    width: 100px;
+}
+
+nav{
+    background-color: #0f0f0f;
+}
+
+table{
+    color: white;
+}
+
+.titulo, h4, h3{
+    color: white;
+}
