@@ -1,0 +1,156 @@
+#navegador{
+    background-color: #1B1A1B;
+    font-size: 13px;
+    height: 60px;
+    height: 80px;
+}
+#LogoNetflix{
+    height: 25px;
+    margin-left: 45px;
+}
+#navbarsExample04{
+    margin-left: 40px;
+}
+#profile{
+    width: 30px; 
+    height: 30px;
+    margin-left: 15px;
+}
+#triangulo{
+    color: white; 
+    fill: white;
+    transform: rotate(180deg);
+    width: 15px;height: 8px;
+    margin-left: 10px;
+}
+#ContainerPortada{
+    padding-left: 0px;
+    padding-right: 0px;
+    height:620px;
+}
+#MascaraPortada{
+    background-color: black;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    position:absolute;
+    height: 620px;
+    margin-bottom: -10%;
+    box-shadow: inset 300px 0px 300px 112px rgba(27,26,27,0.98);background-color: transparent;
+}
+#ImagenPortada{
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: -50px;
+}
+#containerInformacion{
+    margin-left: 55px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin-top: -450px;
+    background-color: transparent;
+}
+.ImageLogo{
+    width: 350px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.iconSimple{
+    color: white;
+}
+.iconComplete{
+    color: white;
+    padding-top: 5px;
+}
+#link{
+    color: white;
+}
+section{
+    background-color: #1B1A1B;
+    margin-top: -50px;
+
+}
+
+.btnContainer{
+    background-color: #27282B;
+    height: 40px;
+    width: 135px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+.btnContainer .iconComplete{
+    position: relative;
+    margin-left: -10px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+.btnInfo{
+    margin-top: -25px;
+    background-color: #27282B;
+    color: white;
+    border: none;
+}
+#informacion{
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
+}
+#informacion p{
+    font-size: 15px;
+    align-content: center;
+}
+
+
+#flechas{
+    border: none;
+
+}
+
+s[id=^btn]{
+    color :rgba(0,0,0,0.9);
+    border: none;
+    background-color: rgba(255,255,255,0.3);
+}
+
+*[id^="cont"]{
+    width: 100%;
+    height: 410px;
+}
+
+#btnprev {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: -30px;
+}
+
+#btnmore{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 180px;
+}
+
+.card{
+    background-color: #1B1A1B ;
+    color: #fff;
+
+}
+.containerMas{
+    position: relative;
+    margin-top: -450px;
+    margin-left: 10%;
+}
+
+#MascaraInfo{
+    width: 98%;
+    height: 500px;
+    padding-right: 0px;
+    margin-left: 150px;
+    position:absolute;
+    margin-bottom: -10%;
+    box-shadow: inset 350px -15px 290px 0px  rgb(27,26,27);background-color: transparent;
+}
