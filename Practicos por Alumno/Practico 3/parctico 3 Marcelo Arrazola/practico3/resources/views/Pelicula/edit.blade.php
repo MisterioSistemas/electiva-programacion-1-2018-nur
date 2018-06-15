@@ -1,0 +1,74 @@
+@extends('layouts.app')
+{{--supuesto masterPage--}}
+
+@section('content')
+    <div class="container">
+        <div class="formContainer">
+            <div class="form">
+                <form method="POST" action="{{ action('PeliculaController@update',$id) }}"
+                      enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group row">
+                        <label for="nombre" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="nombre" type="text"
+                                   class="form-control{{ $errors->has('nombre') ? ' is-invalid' : '' }}"
+                                   name="nombre" value="{{ $objPelicula->nombre }}" required autofocus>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="año" class="col-md-4 col-form-label text-md-right">{{ __('Año') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="año" type="date"
+                                   class="form-control{{ $errors->has('año') ? ' is-invalid' : '' }}"
+                                   name="año" value="{{ $objPelicula->año }}" required autofocus>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="sinopsis" class="col-md-4 col-form-label text-md-right">{{ __('Sinopsis') }}</label>
+
+                        <div class="col-md-6">
+                            <textarea id="sinopsis" type="text" class="form-control" name="sinopsis" required
+                                      autofocus>{{ $objPelicula->sinopsis }}</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="director" class="col-md-4 col-form-label text-md-right">{{ __('Director') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="director" type="text"
+                                   class="form-control{{ $errors->has('director') ? ' is-invalid' : '' }}"
+                                   name="director"
+                                   value="{{ $objPelicula->director }}" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <input id="imageurl" type="hidden"
+                                   class="form-control{{ $errors->has('imageURL') ? ' is-invalid' : '' }}"
+                                   name="imageurl"
+                                   value="{{ $objPelicula->imageURL }}" required autofocus>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Edit') }}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+@endsection

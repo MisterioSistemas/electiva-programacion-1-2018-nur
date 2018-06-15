@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/*-------menu-------*/
+.menuContainer{
+    height: 4em;
+    display: block;
+}
+
+.menu{
+    align-items: center;
+    width: 100%;
+    background-color: #000000;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: #565656;
+    border-bottom-width: 1px;
+    border-bottom-style: outset;
+    box-shadow: 0px -10px 40px 10px #212121;
+    color: white;
+    font-weight: 600;
+    display: flex;
+}
+
+.tituloPag{
+    width: 5em;
+    COLOR: red;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 0.5em;
+    text-align: left;
+    margin-right: 0.5em;
+}
+
+.nuevo{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 6em;
+    text-align: center;
+    position: fixed;
+    right: 20%;
+}
+
+.iconoMenu{}
+
+.sub-menu{
+    width: 6em;
+    text-align: center;
+    position: fixed;
+    right: 2%;
+}
+
+.link{
+    color: #1d7fc5;
+    text-decoration: none;
+}
+
+.nuevo:hover{
+    /*color: red;*/
+    text-shadow: 0 0 30px #FF0000, 0 0 15px #0000FF;
+}
+
+.link:hover{
+    text-shadow: 0 0 30px #FF0000, 0 0 15px #0000FF;
+}
+
+
+/*-------cuerpo-------*/
+
+body{
+    background-color: black;
+}
+
+.contenedorPeliculas{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 95%;
+    height: -webkit-fill-available;
+    flex-wrap: wrap;
+}
+
+.contenedorPeliculas a{
+    text-decoration: none;
+    color: white;
+}
+
+.pelicula{
+    width: 155px;
+    height: 200px;
+    position: relative;
+    margin: 1em;
+    transition: all 0.5s;
+    border-radius: 2%;
+
+}
+
+.id{
+    position: absolute;
+    visibility: hidden;
+}
+
+.divPortada{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 2%;
+
+}
+
+.divPortada, a{
+    color: black;
+    text-decoration: none;
+}
+
+.imgPortada{
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.divTexto{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+    transition: all 0.5s;
+    visibility: hidden;
+}
+
+.titulo{
+    padding-top: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-align: center;
+    display: none;   
+    transition: all 0.8s;
+}
+
+.texto{
+    font-size: 15px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-align: justify;
+    display: flex;
+    margin: 2%;
+    transition: all 0.8s;
+    display: none;
+}
+
+.pelicula:hover{
+    width: 260px;
+    height: 360px;
+    border-radius: 2%;
+    box-shadow: 0px 0px 15px 2px #656565;
+}
+
+.pelicula:hover .divTexto{
+    background: #0000008a;
+    visibility: visible;
+}
+
+.pelicula:hover .titulo{
+    display: block;
+}
+
+.pelicula:hover .texto{
+    display: block;
+}
+
+.divIcons{
+    position: absolute;
+}
+
+.linkIcon{
+    color: white;
+    text-decoration: none;
+    visibility: hidden;
+}
+
+.linkIcon:hover{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: red;
+}
+
+.pelicula:hover .linkIcon{
+    visibility: visible;
+}
+
+.linkIcon:hover + .divTexto{
+    background: #0000008a;
+}
+
+.iconPlay{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    font-size: 5em;
+}
+
+.divSubIcons{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 2%;
+}
+
+.subIcons{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.iconLike{}
+
+.iconNoLike{}
+
+.iconAdd{}
+
+/*----------formulario-----------*/
+
+.container{
+    color:white;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    margin-top: 30px;
+}
+
+.formContainer{
+    width: 100%;
+}
+
+.form{
+    width: 350px;
+    margin: auto;
+}
+
+.formDiv{
+    text-align: right;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.formInput{
+    width: 200px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+.formInputSinopsis{
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.formDiv label{
+    width: 70px;
+}
+
+
+.formInputButtom{
+    margin: 0 60px;
+    width: 120px;
+    height: 25px;
+}
+
+/*-------ListaAdm------*/
+
+.containerList{
+    color: white;
+}
+
+.DivTable{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tableList{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tableList td, .tableList th{
+    width: 120px;
+    height: 40px;
+    padding: 0 15px;
+    text-align: center;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+}
+
+/*-------descPelicula--------*/
+
+.divAtras{}
+
+.linkDesc{}
+
+.divImagen{
+    height: 550px;
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+}
+
+.imgPortadaDesc{
+    width: 430px;
+    height: 550px;
+    border-radius: 2%;
+}
+
+.contenido{
+    width: 60%;
+    float: right;
+    color: white;
+    height: 550px;
+    padding-left: 130px;
+    background-color: #000000;
+    box-shadow: -50px 0px 36px 26px #000000fa;
+    padding-top: 30px;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.contenido div{
+    margin-top: 20px;
+}
+
+.textoDesc{
+}
+
+.divNombre{}
+
+.tituloDesc{}
+
+.divSinopsis{}
+
+.divAnho{}
+
+.divDirector{}
+
+.iconPlayDesc{
+    font-size: 100px;
+    position: relative;
+    top: 200px;
+    left: 130px;
+}
+
+
+
+.divSubIconsDesc{
+    display: grid;
+    float: right;
+    margin-top: 250px;
+}
+
+.subIconsDesc{
+    margin: 15px;
+}
+
+.linkIconDesc{
+    color: white;
+    text-decoration: none;
+}
+
+.linkIconDesc:hover{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: red;
+}
+
+.link:hover{
+    text-shadow: 0 0 30px #FF0000, 0 0 15px #0000FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
