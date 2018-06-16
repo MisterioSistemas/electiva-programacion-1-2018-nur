@@ -1,0 +1,122 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+body{
+    background: rgba(20, 20, 20, 0.9);
+    background-size: 100%;
+    /*background: #FF0000;*/
+}
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+#video_pattern {
+    background:#fff;
+    position: fixed;
+    opacity: 0.8;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.tamanioimg {
+    max-width: 100px;
+
+}
+
+#tamaniologo{
+    padding-left: 120px;
+}
+#solonegro{
+    background: #000000;
+    /*    border-bottom-color: #141A23;*/
+}
+
+#fondoazul{
+
+    border-style: ridge;
+    border-width: 1px 0px 1px 0px;
+    opacity: 1;
+    border-color:#141921;
+
+    background-image: url("../img/fondohead.png");
+
+}
+
+
+#letra{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+
+}
+
+#espacio1{
+    padding-right:110px;
+}
+
+#espacio2{
+    padding-left:28px;
+}
+#espacio3{
+
+    list-style:none;
+}
+
+#reducir{
+    width: 10px;
+    height: 10px;
+}
+#colortransparente{
+
+    background: rgba(0, 13, 34, 0.6);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#titulo{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#mover{
+    margin-left: -20px;
+
+}
+
+#negrura{
+    background: rgba(0, 12, 32, 0.9);
+
+}
+.letrablanca{
+    color: #ffffff;
+}
+
+#letrablanca{
+    color: #ffffff;
+}
+
+
+#fondonegro{
+
+    border-style: ridge;
+    border-width: 1px 0px 1px 0px;
+    opacity: 1;
+    border-color:#141921;
+
+    background-image: url("../img/fondoJuego.png");
+
+}
+
+#espacio5{
+    margin-left: 700px;
+    color: #ffffff;
+}
